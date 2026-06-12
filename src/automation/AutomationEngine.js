@@ -264,6 +264,8 @@ async function runAutomation(jobId, onLog) {
       '--disable-setuid-sandbox',
       '--disable-web-security',
       '--disable-features=IsolateOrigins,site-per-process',
+      '--disable-dev-shm-usage',
+      '--disable-gpu',
       `--window-size=${fingerprint.viewport.width},${fingerprint.viewport.height}`
     ];
 
